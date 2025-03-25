@@ -60,7 +60,7 @@
 
     // Service carousel
     $(".service-carousel").owlCarousel({
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 1500,
         margin: 30,
         dots: false,
@@ -103,7 +103,7 @@
 
     // Team carousel
     $(".team-carousel").owlCarousel({
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 1500,
         margin: 30,
         dots: false,
@@ -132,7 +132,7 @@
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 1000,
         items: 1,
         loop: true,
