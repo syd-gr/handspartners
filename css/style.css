@@ -46,6 +46,7 @@
   background-color: #fff;
   border-radius: 10px;
   transition: transform 0.3s ease;
+  height: 100%;
 }
 
 .staff-card:hover {
@@ -64,6 +65,7 @@
   color: #333;
   line-height: 1.6;
 }
+
 
 
 html {
