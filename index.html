@@ -2,170 +2,152 @@
 <html lang="en">
 
 <head>
-    <style>
-        .section-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #222;
-    border-left: 5px solid #FFC600; /* yellow */
-    padding-left: 15px;
-    position: relative;
-}
-
-.section-title::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 5px;
-    height: 50%;
-    background-color: #FF6F00; /* orange or second color */
-}
-
-.custom-profile-card {
-    transition: all 0.3s ease-in-out;
-}
-
-.custom-image-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-    
-        .custom-profile-card {
-    transition: all 0.3s ease-in-out;
-        }
-
-.custom-image-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.custom-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(10, 10, 10, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.custom-image-container:hover .custom-overlay {
-    opacity: 1;
-}
-
-.custom-message {
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    font-size: 1rem;
-}
-
-        
-        
-        .carousel-item img {
-    width: 100%;
-    object-fit: cover;
-        }
-
-    </style>
     <meta charset="utf-8">
-    <title>H and S Partners</title>
+    <title>H and S Partners | Professional Hotel Cleaning Services</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="H & S Partners provides high-quality hotel room cleaning, window cleaning, and carpet maintenance services in Tokyo and Chiba.">
 
-
-    <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* --- Custom Styles --- */
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #222;
+            border-left: 5px solid #FFC600; /* yellow */
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 50%;
+            background-color: #FF6F00; /* orange */
+        }
+
+        .custom-profile-card {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .custom-image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .custom-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(10, 10, 10, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .custom-image-container:hover .custom-overlay {
+            opacity: 1;
+        }
+
+        .custom-message {
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            font-size: 1rem;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        /* Table Styling for About Section */
+        .table-custom th {
+            background-color: #007bff;
+            color: white;
+            width: 30%;
+            vertical-align: middle;
+        }
+        .table-custom td {
+            background-color: #f8f9fa;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Header Start -->
-      <div class="container-fluid">
-    <div class="row">
-        <!-- Left Logo Section -->
-        <div class="col-lg-3 bg-secondary d-none d-lg-flex align-items-center justify-content-center">
-            <a href="#" class="navbar-brand m-0 p-0 text-center">
-                <h1 class="m-0 display-3 text-primary">H & S <br> Partners</h1>
-            </a>
-        </div>
-
-        <!-- Right Info + Navbar -->
-        <div class="col-lg-9">
-            <!-- Top Info Bar -->
-            <div class="bg-dark text-white d-none d-lg-flex justify-content-between align-items-center px-3" style="height: 80px;">
-                <div class="d-flex align-items-center">
-                    <div class="d-flex align-items-center border-right border-primary pr-3 mr-3">
-                        <i class="fa fa-envelope text-primary mr-2"></i>
-                        <small>haru_kawamura1959@yahoo.co.jp</small>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <i class="fa fa-phone-alt text-primary mr-2"></i>
-                        <small>070-1447-2455</small>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/profile.php?id=61568718302145&mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
-                </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 bg-secondary d-none d-lg-flex align-items-center justify-content-center">
+                <a href="index.html" class="navbar-brand m-0 p-0 text-center">
+                    <h1 class="m-0 display-3 text-primary">H & S <br> Partners</h1>
+                </a>
             </div>
 
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg bg-blue navbar-light p-0">
-                <!-- Mobile Logo -->
-                <a href="#" class="navbar-brand d-block d-lg-none">
-                    <h1 class="m-0 display-4 text-primary">H & S Partners</h1>
-                </a>
-
-                <!-- Toggle for mobile -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Navbar content -->
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <!-- Navigation links -->
-                    <div class="navbar-nav mr-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">ホーム</a>
-                        <a href="#about" class="nav-item nav-link">会社概要</a>
-                        <a href="#service" class="nav-item nav-link">サービス</a>
-                        <a href="#project" class="nav-item nav-link"> プロジェクト</a>
-                        <a href="#staff" class="nav-item nav-link">スタッフ紹介</a>
-                        <a href="#contact" class="nav-item nav-link">お問い合わせ</a>
+            <div class="col-lg-9">
+                <div class="bg-dark text-white d-none d-lg-flex justify-content-between align-items-center px-3" style="height: 80px;">
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center border-right border-primary pr-3 mr-3">
+                            <i class="fa fa-envelope text-primary mr-2"></i>
+                            <small>haru_kawamura1959@yahoo.co.jp</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-phone-alt text-primary mr-2"></i>
+                            <small>070-1447-2455</small>
+                        </div>
                     </div>
-
-                    <!-- Right Button -->
-                    <a href="#" class="btn btn-primary d-none d-lg-block">東京、日本</a>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/profile.php?id=61568718302145&mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
                 </div>
-            </nav>
+
+                <nav class="navbar navbar-expand-lg bg-blue navbar-light p-0">
+                    <a href="index.html" class="navbar-brand d-block d-lg-none">
+                        <h1 class="m-0 display-4 text-primary">H & S Partners</h1>
+                    </a>
+
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active">ホーム</a>
+                            <a href="#about" class="nav-item nav-link">会社概要</a>
+                            <a href="#service" class="nav-item nav-link">サービス</a>
+                            <a href="#project" class="nav-item nav-link"> プロジェクト</a>
+                            <a href="#staff" class="nav-item nav-link">スタッフ紹介</a>
+                            <a href="#contact" class="nav-item nav-link">お問い合わせ</a>
+                        </div>
+
+                        <a href="#contact" class="btn btn-primary d-none d-lg-block">東京、日本</a>
+                    </div>
+                </nav>
+            </div>
         </div>
     </div>
-    </div>
-
-    <!-- Header End -->
-
-
-    <!-- Carousel Start -->
     <div class="container-fluid p-0">
         <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -176,7 +158,7 @@
             
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="img-fluid" src="img/carousel-1.jpg" alt="Image">
+                    <img class="img-fluid" src="img/carousel-1.jpg" alt="最高品質のクリーニングソリューション">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
                             <h5 class="text-primary text-uppercase mb-md-3">清掃サービス</h5>
@@ -185,7 +167,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid" src="img/carousel-2.jpg" alt="Image">
+                    <img class="img-fluid" src="img/carousel-2.jpg" alt="専門性を備えた清掃サービス">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
                             <h5 class="text-primary text-uppercase mb-md-3">清掃サービス</h5>
@@ -194,7 +176,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid" src="img/carousel-3.jpg" alt="Image">
+                    <img class="img-fluid" src="img/carousel-3.jpg" alt="経験豊富で熟練した清掃員">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
                             <h5 class="text-primary text-uppercase mb-md-3">清掃サービス</h5>
@@ -205,149 +187,171 @@
             </div>
         </div>
     </div>
-    <!-- Carousel End -->
-
-
-    <!-- Contact Info Start -->
-    <section id="about">
-    <div class="container-fluid pb-5 contact-info">
-        <div class="row">
-            <div class="col-lg-4 p-0">
-                <div class="contact-info-item d-flex align-items-center justify-content-center bg-primary text-white py-4 py-lg-0">
-                    <i class="fa fa-3x fa-map-marker-alt text-secondary mr-4"></i>
-                    <div class="">
-                        <h5 class="mb-2">会社の住所</h5>
-                        <p class="m-0">千葉県浦安市北栄4丁⽬4番11号</p>
+    <section id="contact-info">
+        <div class="container-fluid pb-5 contact-info">
+            <div class="row">
+                <div class="col-lg-4 p-0">
+                    <div class="contact-info-item d-flex align-items-center justify-content-center bg-primary text-white py-4 py-lg-0">
+                        <i class="fa fa-3x fa-map-marker-alt text-secondary mr-4"></i>
+                        <div class="">
+                            <h5 class="mb-2">会社の住所</h5>
+                            <p class="m-0">千葉県浦安市北栄4丁⽬4番11号</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 p-0">
-                <div class="contact-info-item d-flex align-items-center justify-content-center bg-secondary text-white py-4 py-lg-0">
-                    <i class="fa fa-3x fa-envelope-open text-primary mr-4"></i>
-                    <div class="">
-                        <h5 class="mb-2">電子メール</h5>
-                        <p class="m-0">haru_kawamura1959@yahoo.co.jp</p>
+                <div class="col-lg-4 p-0">
+                    <div class="contact-info-item d-flex align-items-center justify-content-center bg-secondary text-white py-4 py-lg-0">
+                        <i class="fa fa-3x fa-envelope-open text-primary mr-4"></i>
+                        <div class="">
+                            <h5 class="mb-2">電子メール</h5>
+                            <p class="m-0">haru_kawamura1959@yahoo.co.jp</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 p-0">
-                <div class="contact-info-item d-flex align-items-center justify-content-center bg-primary text-white py-4 py-lg-0">
-                    <i class="fa fa-3x fa-phone-alt text-secondary mr-4"></i>
-                    <div class="">
-                        <h5 class="mb-2">連絡先の詳細</h5>
-                        <p class="m-0">070-1447-2455</p>
+                <div class="col-lg-4 p-0">
+                    <div class="contact-info-item d-flex align-items-center justify-content-center bg-primary text-white py-4 py-lg-0">
+                        <i class="fa fa-3x fa-phone-alt text-secondary mr-4"></i>
+                        <div class="">
+                            <h5 class="mb-2">連絡先の詳細</h5>
+                            <p class="m-0">070-1447-2455</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
-    <!-- Contact Info End -->
+    <section id="about">
+        <div class="container-fluid py-5 mb-5">
+            <div class="container">
+                <div class="row align-items-stretch">
+                    <div class="col-lg-4 mb-4 mb-lg-0">                
+                        <div class="d-flex flex-column align-items-center justify-content-center bg-about rounded h-100 py-5 px-3" style="background-color: #343a40;">                    
+                            <i class="fa fa-5x fa-award text-primary mb-4"></i>
+                            <h1 class="display-2 text-white mb-2" data-toggle="counter-up">2024</h1>
+                            <h2 class="text-white m-0">設⽴</h2>
+                        </div>
+                    </div>
 
-    <!-- About Start -->
-<div class="container-fluid py-5 mb-5">
-    <div class="container">
-        <div class="row align-items-stretch">
-            <!-- Left Box -->
-            <div class="col-lg-5">                
-                <div class="d-flex flex-column align-items-center justify-content-center bg-about rounded h-100 py-5 px-3">                    
-                    <i class="fa fa-5x fa-award text-primary mb-4"></i>
-                    <h1 class="display-2 text-white mb-2" data-toggle="counter-up">2024</h1>
-                    <h2 class="text-white m-0">設⽴</h2>
-                </div>
-            </div>
-
-            <!-- Right Content: Buttons (left)
-            <div class="col-lg-7">
-                <div class="d-flex flex-row justify-content-between align-items-start h-100 p-3 rounded shadow bg-light gap-3">
-
-                    <!-- Buttons Column -->
-                    <div class="d-flex flex-column" style="flex: 1;">
-                        <button style="width: 100%; padding: 12px; margin-bottom: 10px; background-color: #007bff; color: white;">H&S PARTNERS CO., LTD. <br> 会社概要</button>
-                        <button style="width: 100%; padding: 12px; margin-bottom: 10px; text-align: left; background-color: #007bff; color: white;">会社名  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 株式会社H＆Sパートナーズ</button>
-                        <button style="width: 100%; padding: 12px; margin-bottom: 10px; text-align: left; background-color: #007bff; color: white;">設⽴ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2024年4⽉30⽇</button>
-                        <button style="width: 100%; padding: 12px; margin-bottom: 10px; text-align: left; background-color: #007bff; color: white;">資本⾦ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1,000万円</button>
-                        <button style="width: 100%; padding: 12px; margin-bottom: 10px; text-align: left; background-color: #007bff; color: white;">所在地 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 千葉県浦安市北栄4丁⽬4番11号</button>
-                        <button style="width: 100%; padding: 12px; margin-bottom: 10px; text-align: left; background-color: #007bff; color: white;">代表者 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 代表取締役河村治義</button>
-                        <button style="width: 100%; padding: 12px; margin-bottom: 10px; text-align: left; background-color: #007bff; color: white;">従業員数 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;　150名（役員：4名パート職員：146名）</button>
-                        <button style="width: 100%; padding: 12px; margin-bottom: 10px; text-align: left; background-color: #007bff; color: white;">売上⾼ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2億円（第２期目予想）</button>
-                        <button style="width: 100%; padding: 12px; margin-bottom: 10px; text-align: left; background-color: #007bff; color: white;">事業内容 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ホテルの客室清掃業務及びメンテナンス業務</button>
-                        <button style="width: 100%; padding: 12px; margin-bottom: 10px; text-align: left; background-color: #007bff; color: white;">主な取引先 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;株式会社SYD 
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 株式会社センチュリオンファシリティーズ
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  アイコニア・ホスピタリティ株式会社
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  株式会社 betaspace
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  株式会社 MKG JAPAN
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  MTJ 不動産株式会社
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   琢居株式会社</button>
-                        <button style="width: 100%; padding: 12px; margin-bottom: 10px; text-align: left; background-color: #007bff; color: white;">取引銀⾏ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 千葉銀⾏浦安⽀店</button>
-                        <button style="width: 100%; padding: 12px; margin-bottom: 10px; text-align: left; background-color: #007bff; color: white;">会社沿⾰ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2024年 04⽉株式会社H＆Sパートナーズ設⽴
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 05⽉ホテル清掃業務開始
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                                  センチュリオンホテル池袋
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 06⽉横浜関内MAYUDAMACABIN
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08⽉MKGホーム芝公園
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10⽉アートホテル⽇暮⾥ラングウッド
-                        <br>
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2025年 02⽉MKG ホテル 浅草
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  07⽉ホテルマイステイズプレミア金沢
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  12⽉エルミタージュ西新宿
-                        <br>
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2026年 02⽉ホテルマイステイズ金沢片町
-                        <br></button>
+                    <div class="col-lg-8">
+                        <div class="h-100 p-3 rounded shadow bg-light">
+                            <h3 class="mb-3 text-center text-primary font-weight-bold">H&S PARTNERS CO., LTD. 会社概要</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-custom">
+                                    <tbody>
+                                        <tr>
+                                            <th>会社名</th>
+                                            <td>株式会社H＆Sパートナーズ</td>
+                                        </tr>
+                                        <tr>
+                                            <th>設⽴</th>
+                                            <td>2024年4⽉30⽇</td>
+                                        </tr>
+                                        <tr>
+                                            <th>資本⾦</th>
+                                            <td>1,000万円</td>
+                                        </tr>
+                                        <tr>
+                                            <th>所在地</th>
+                                            <td>千葉県浦安市北栄4丁⽬4番11号</td>
+                                        </tr>
+                                        <tr>
+                                            <th>代表者</th>
+                                            <td>代表取締役 河村治義</td>
+                                        </tr>
+                                        <tr>
+                                            <th>従業員数</th>
+                                            <td>150名（役員：4名 パート職員：146名）</td>
+                                        </tr>
+                                        <tr>
+                                            <th>売上⾼</th>
+                                            <td>2億円（第２期目予想）</td>
+                                        </tr>
+                                        <tr>
+                                            <th>事業内容</th>
+                                            <td>ホテルの客室清掃業務及びメンテナンス業務</td>
+                                        </tr>
+                                        <tr>
+                                            <th>主な取引先</th>
+                                            <td>
+                                                株式会社SYD<br>
+                                                株式会社センチュリオンファシリティーズ<br>
+                                                アイコニア・ホスピタリティ株式会社<br>
+                                                株式会社 betaspace<br>
+                                                株式会社 MKG JAPAN<br>
+                                                MTJ 不動産株式会社<br>
+                                                琢居株式会社
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>取引銀⾏</th>
+                                            <td>千葉銀⾏浦安⽀店</td>
+                                        </tr>
+                                        <tr>
+                                            <th>会社沿⾰</th>
+                                            <td>
+                                                <strong>2024年</strong><br>
+                                                04⽉ 株式会社H＆Sパートナーズ設⽴<br>
+                                                05⽉ ホテル清掃業務開始 センチュリオンホテル池袋<br>
+                                                06⽉ 横浜関内MAYUDAMACABIN<br>
+                                                08⽉ MKGホーム芝公園<br>
+                                                10⽉ アートホテル⽇暮⾥ラングウッド<br><br>
+                                                <strong>2025年</strong><br>
+                                                02⽉ MKG ホテル 浅草<br>
+                                                07⽉ ホテルマイステイズプレミア金沢<br>
+                                                12⽉ エルミタージュ西新宿<br><br>
+                                                <strong>2026年</strong><br>
+                                                02⽉ ホテルマイステイズ金沢片町
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- About End -->
-
-
-    <!-- Services Start -->
+    </section>
     <section id="service">
-    <div class="container-fluid bg-service py-5">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">当社のサービス</h6>
-                    <h1 class="mb-4 section-title text-white">ホテルの客室清掃窓掃除</h1>
-                    <h1 class="mb-4 section-title text-white">パブリック 清掃</h1>
-                    <h1 class="mb-4 section-title text-white">カーペットクリーニング・窓掃除</h1>
-                
-                </div>
-                <div class="col-lg-6 pt-5 pt-lg-0">
-                    <div class="owl-carousel service-carousel position-relative">
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded overflow-hidden pt-4">
-                            <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
-                                <i class="fa fa-2x fa-hotel"></i>
+        <div class="container-fluid bg-service py-5">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">当社のサービス</h6>
+                        <h1 class="mb-4 section-title text-white">ホテルの客室清掃窓掃除</h1>
+                        <h1 class="mb-4 section-title text-white">パブリック 清掃</h1>
+                        <h1 class="mb-4 section-title text-white">カーペットクリーニング・窓掃除</h1>
+                    
+                    </div>
+                    <div class="col-lg-6 pt-5 pt-lg-0">
+                        <div class="owl-carousel service-carousel position-relative">
+                            <div class="d-flex flex-column align-items-center text-center bg-white rounded overflow-hidden pt-4">
+                                <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
+                                    <i class="fa fa-2x fa-hotel"></i>
+                                </div>
+                                <h5 class="font-weight-bold mb-4 px-4">Hotel Cleaning</h5>
+                                <img src="img/blog-1.jpg" alt="Hotel Room Cleaning">
                             </div>
-                            <h5 class="font-weight-bold mb-4 px-4">Hotel Cleaning</h5>
-                            <img src="img/blog-1.jpg" alt="">
-                        </div>
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded overflow-hidden pt-4">
-                            <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
-                                <i class="fa fa-2x fa-city"></i>
+                            <div class="d-flex flex-column align-items-center text-center bg-white rounded overflow-hidden pt-4">
+                                <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
+                                    <i class="fa fa-2x fa-city"></i>
+                                </div>
+                                <h5 class="font-weight-bold mb-4 px-4">Window Cleaning</h5>
+                                <img src="img/blog-3.jpg" alt="Professional Window Cleaning">
                             </div>
-                            <h5 class="font-weight-bold mb-4 px-4">Window Cleaning</h5>
-                            <img src="img/blog-3.jpg" alt="">
-                        </div>
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded overflow-hidden pt-4">
-                            <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
-                                <i class="fa fa-2x fa-spa"></i>
+                            <div class="d-flex flex-column align-items-center text-center bg-white rounded overflow-hidden pt-4">
+                                <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
+                                    <i class="fa fa-2x fa-spa"></i>
+                                </div>
+                                <h5 class="font-weight-bold mb-4 px-4">Carpet Cleaning</h5>
+                                <img src="img/blog-2.jpg" alt="Carpet Cleaning Service">
                             </div>
-                            <h5 class="font-weight-bold mb-4 px-4">Carpet Cleaning</h5>
-                            <img src="img/blog-2.jpg" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-        </section>
-    <!-- Services End -->
-
-
-    <!-- Features Start -->
+    </section>
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="row">
@@ -358,185 +362,169 @@
                 </div>
                 <div class="col-lg-5" style="min-height: 400px;">
                     <div class="position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="img/feature.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="img/feature.jpg" alt="Professional Cleaning Staff" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Features End -->
-
-
-    <!-- Portfolio Start -->
     <section id="project">
-    <div class="container-fluid bg-portfolio py-5">
-        <div class="container py-5">
-            <div class="row m-0 portfolio-container">
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">ベッドメイキング</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
+        <div class="container-fluid bg-portfolio py-5">
+            <div class="container py-5">
+                <div class="row m-0 portfolio-container">
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                        <div class="position-relative overflow-hidden">
+                            <div class="portfolio-img">
+                                <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="Bed Making Service">
+                            </div>
+                            <div class="portfolio-text bg-primary">
+                                <h4 class="font-weight-bold mb-4">ベッドメイキング</h4>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-1.jpg" data-lightbox="portfolio" data-title="ベッドメイキング">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">バスルーム 清掃</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                               
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                        <div class="position-relative overflow-hidden">
+                            <div class="portfolio-img">
+                                <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="Bathroom Cleaning">
+                            </div>
+                            <div class="portfolio-text bg-primary">
+                                <h4 class="font-weight-bold mb-4">バスルーム 清掃</h4>
+                                <div class="d-flex align-items-center justify-content-center">
+                                   
+                                    <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-2.jpg" data-lightbox="portfolio" data-title="バスルーム 清掃">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">パブリック 清掃</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                        <div class="position-relative overflow-hidden">
+                            <div class="portfolio-img">
+                                <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="Public Area Cleaning">
+                            </div>
+                            <div class="portfolio-text bg-primary">
+                                <h4 class="font-weight-bold mb-4">パブリック 清掃</h4>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    
+                                    <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-3.jpg" data-lightbox="portfolio" data-title="パブリック 清掃">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">カーペット 清掃</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                        <div class="position-relative overflow-hidden">
+                            <div class="portfolio-img">
+                                <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="Carpet Cleaning">
+                            </div>
+                            <div class="portfolio-text bg-primary">
+                                <h4 class="font-weight-bold mb-4">カーペット 清掃</h4>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    
+                                    <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-4.jpg" data-lightbox="portfolio" data-title="カーペット 清掃">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">窓 清掃</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                        <div class="position-relative overflow-hidden">
+                            <div class="portfolio-img">
+                                <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="Window Cleaning">
+                            </div>
+                            <div class="portfolio-text bg-primary">
+                                <h4 class="font-weight-bold mb-4">窓 清掃</h4>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    
+                                    <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-5.jpg" data-lightbox="portfolio" data-title="窓 清掃">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">ソファー清掃</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                        <div class="position-relative overflow-hidden">
+                            <div class="portfolio-img">
+                                <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="Sofa Cleaning">
+                            </div>
+                            <div class="portfolio-text bg-primary">
+                                <h4 class="font-weight-bold mb-4">ソファー清掃</h4>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    
+                                    <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-6.jpg" data-lightbox="portfolio" data-title="ソファー清掃">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>  
-        </section>
-    <!-- Portfolio End -->
-
-
-    <!-- Team Start -->
+    </section>
     <section id="staff" class="py-5" style="background-color: #ADD8E6;">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col">
-        <h2 class="section-title position-relative mb-0 pl-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;チームのご紹介</h2>
-      </div>
-    </div>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 class="section-title position-relative mb-0 d-inline-block px-4" style="border-left: none; border-bottom: 5px solid #FFC600;">チームのご紹介</h2>
+                </div>
+            </div>
 
-    <div class="row justify-content-center">
-      <!-- Staff Member 1 -->
-      <div class="col-md-6 col-lg-5 mb-4 d-flex">
-        <div class="staff-card p-4 shadow-sm bg-white rounded w-100 d-flex flex-column justify-content-between">
-          <div class="text-center mb-3">
-            <img src="img/team-2.jpg" class="rounded-circle staff-img" alt="河村治義">
-          </div>
-          <h5 class="text-center font-weight-bold mb-1">河村治義 <br>Haruyoshi Kawamura</h5>
-          <p class="text-center text-muted mb-3">代表取締役社長 <br>Representative Director and President</p>
-          <p class="staff-message text-center flex-grow-1"> <b>
-            「H&Sパートナーズ 」われわれはこの社名に、ホテル(H)とスタッフ(S)を大事にし、
-              互いにタッグを組んで、お客様に対して質の良いサービス(S)を提供し、
-              満足(S)していただきたいという思いを込めています。 われわれの仕事は、
-              関係するすべてのスタッフを信頼し、良い関係を維持しつつ、
-              ホテルを利用するお客様に対して質の高い清掃サービスを通して安心で快適な環境を提供することを目的とします。 
-              H&S パートナーズ、われわれは変化する社会、地球環境においてますます重要となる相互の信頼関係を大事にし、
-              仕事に真摯に向き合ってまいります。</b>
-              <br><br>
-              Our company name "H&S Partners" reflects our desire to value hotels (H) and staff (S), teaming up to provide quality service (S) to guests and ensure their satisfaction (S). 
-              Our work is aimed at providing a safe and comfortable environment for hotel guests through high-quality cleaning services, while trusting and maintaining good relationships with all staff involved. 
-              At H&S Partners, we value mutual trust, which is becoming increasingly important in a changing society and global environment, and we approach our work with sincerity.
-             </p>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5 mb-4 d-flex">
+                    <div class="staff-card p-4 shadow-sm bg-white rounded w-100 d-flex flex-column justify-content-between">
+                        <div class="text-center mb-3">
+                            <img src="img/team-2.jpg" class="rounded-circle staff-img" alt="河村治義 - Haruyoshi Kawamura" style="width: 150px; height: 150px; object-fit: cover;">
+                        </div>
+                        <h5 class="text-center font-weight-bold mb-1">河村治義 <br>Haruyoshi Kawamura</h5>
+                        <p class="text-center text-muted mb-3">代表取締役社長 <br>Representative Director and President</p>
+                        <p class="staff-message text-center flex-grow-1" style="font-size: 0.9rem;"> 
+                            <b>「H&Sパートナーズ 」われわれはこの社名に、ホテル(H)とスタッフ(S)を大事にし、
+                            互いにタッグを組んで、お客様に対して質の良いサービス(S)を提供し、
+                            満足(S)していただきたいという思いを込めています。 われわれの仕事は、
+                            関係するすべてのスタッフを信頼し、良い関係を維持しつつ、
+                            ホテルを利用するお客様に対して質の高い清掃サービスを通して安心で快適な環境を提供することを目的とします。 
+                            H&S パートナーズ、われわれは変化する社会、地球環境においてますます重要となる相互の信頼関係を大事にし、
+                            仕事に真摯に向き合ってまいります。</b>
+                            <br><br>
+                            Our company name "H&S Partners" reflects our desire to value hotels (H) and staff (S), teaming up to provide quality service (S) to guests and ensure their satisfaction (S). 
+                            Our work is aimed at providing a safe and comfortable environment for hotel guests through high-quality cleaning services, while trusting and maintaining good relationships with all staff involved. 
+                            At H&S Partners, we value mutual trust, which is becoming increasingly important in a changing society and global environment, and we approach our work with sincerity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-5 mb-4 d-flex">
+                    <div class="staff-card p-4 shadow-sm bg-white rounded w-100 d-flex flex-column justify-content-between">
+                        <div class="text-center mb-3">
+                            <img src="img/team-1.jpg" class="rounded-circle staff-img" alt="ラマ タマン カンチャ - Lama Tamang Kanchha" style="width: 150px; height: 150px; object-fit: cover;">
+                        </div>
+                        <h5 class="text-center font-weight-bold mb-1">ラマ タマン カンチャ<br>Lama Tamang Kanchha</h5>
+                        <p class="text-center text-muted mb-3">代表取締役副社長 <br>Executive Vice President</p>
+                        <p class="staff-message text-center flex-grow-1" style="font-size: 0.9rem;"> 
+                            <b>私たちは、環境に優しく、高品質なホテル客室清掃を提供し、お客様にご満足いただける清掃会社になることを目標に、
+                            H&S Partners を立ち上げました。私たちは、1秒でも早く、幸せを考えながら、お客様が必要とするものをできる限り早く提供することをモットーにしております。
+                            世の中には一人では何もできません。世界中の人々の協力が必要であり、人とのつながりや出会いを大切にしながら、
+                            ホテルに関わるすべての業務を皆様と一緒に頑張っていきたいと考えております。</b><br> <br>
+                            We established H&S Partners with the goal of becoming a cleaning company that provides environment friendly, high-quality hotel room cleaning and satisfies our customers. 
+                            Our motto is to provide our customers with what they need as quickly as possible, even if it's just a second faster, while thinking about their happiness. 
+                            No one person in this world can do anything alone. 
+                            We need the cooperation of people all over the world, and we would like to work hard with you on all hotel-related tasks, cherishing our connections and encounters with people.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <!-- Staff Member 2 -->
-      <div class="col-md-6 col-lg-5 mb-4 d-flex">
-        <div class="staff-card p-4 shadow-sm bg-white rounded w-100 d-flex flex-column justify-content-between">
-          <div class="text-center mb-3">
-            <img src="img/team-1.jpg" class="rounded-circle staff-img" alt="ラマ タマン カンチャ">
-          </div>
-          <h5 class="text-center font-weight-bold mb-1">ラマ タマン カンチャ<br>Lama Tamang Kanchha</h5>
-          <p class="text-center text-muted mb-3">代表取締役副社長 <br>Executive Vice President <p>
-          <p class="staff-message text-center flex-grow-1"> <b>
-                私たちは、環境に優しく、高品質なホテル客室清掃を提供し、お客様にご満足いただける清掃会社になることを目標に、
-                H&S Partners を立ち上げました。私たちは、1秒でも早く、幸せを考えながら、お客様が必要とするものをできる限り早く提供することをモットーにしております。
-　               世の中には一人では何もできません。世界中の人々の協力が必要であり、人とのつながりや出会いを大切にしながら、
-              ホテルに関わるすべての業務を皆様と一緒に頑張っていきたいと考えております。</b><br> <br>
-              We established H&S Partners with the goal of becoming a cleaning company that provides environment friendly, high-quality hotel room cleaning and satisfies our customers. 
-              Our motto is to provide our customers with what they need as quickly as possible, even if it's just a second faster, while thinking about their happiness. 
-              No one person in this world can do anything alone. 
-              We need the cooperation of people all over the world, and we would like to work hard with you on all hotel-related tasks, cherishing our connections and encounters with people.
-              <br></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
+    </section>
     <div class="container-fluid bg-testimonial py-5">
         <div class="container py-5">
             <div class="row">
@@ -546,121 +534,106 @@
                     <div class="owl-carousel testimonial-carousel position-relative">
                         <div class="d-flex flex-column text-white">
                             <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                                <img class="img-fluid" src="img/testimonial-1.jpg" alt="Client 1">
                                 <div class="ml-3">
                                     <h5 class="text-primary">アートホテル日暮里ラングウッド</h5>
                                     <i>ホテル</i>
                                 </div>
                             </div>
-                          
                         </div>
                         <div class="d-flex flex-column text-white">
                             <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                                <img class="img-fluid" src="img/testimonial-2.jpg" alt="Client 2">
                                 <div class="ml-3">
                                     <h5 class="text-primary">センチュリオンホテル池袋</h5>
                                     <i>ホテル</i>
                                 </div>
                             </div>
-                           
                         </div>
                         <div class="d-flex flex-column text-white">
                             <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                                <img class="img-fluid" src="img/testimonial-3.jpg" alt="Client 3">
                                 <div class="ml-3">
                                     <h5 class="text-primary">Tabist Mayudama Cabin Hotel</h5>
                                     <i>関内 ホテル</i>
                                 </div>
                             </div>
-                           
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5" style="min-height: 400px;">
                     <div class="position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="img/testimonial.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="img/testimonial.jpg" alt="Testimonials Background" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
-
-
-    <!-- Blog Start -->
-
-    <!-- Blog End -->
-
-
-    <!-- Footer Start -->
     <section id="contact">
-    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 mt-n3 display-4 text-primary">H & S <br>Partners</h1>
-                </a>
-                <h5 class="font-weight-semi-bold text-white mb-2">営業時間:</h5>
-                <p class="mb-1">月曜日から金曜日、午前9時から午後6時</p>
-                <p class="mb-0">祝日, 土曜, 日曜：休業</p>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="font-weight-semi-bold text-primary mb-4">連絡先の詳細</h4>
-                <p><i class="fa fa-map-marker-alt text-primary mr-2"></i>千葉県浦安市北栄4丁⽬4番11号</p>
-                <p><i class="fa fa-phone-alt text-primary mr-2"></i>070-1447-2455</p>
-                <p><i class="fa fa-envelope text-primary mr-2"></i>haru_kawamura1959@yahoo.co.jp</p>
-                
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="font-weight-semi-bold text-primary mb-4">便利リンク</h4>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="index.html"><i class="fa fa-angle-right mr-2">ホーム</i></a>
-                    <a class="text-white mb-2" href="#about"><i class="fa fa-angle-right mr-2">会社概要</i></a>
-                    <a class="text-white mb-2" href="#service"><i class="fa fa-angle-right mr-2">サービス</i></a>
-                    <a class="text-white mb-2" href="#project"><i class="fa fa-angle-right mr-2">プロジェクト</i></a>
-                    <a class="text-white" href="#contact"><i class="fa fa-angle-right mr-2">お問い合わせ</i></a>
+        <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="m-0 mt-n3 display-4 text-primary">H & S <br>Partners</h1>
+                    </a>
+                    <h5 class="font-weight-semi-bold text-white mb-2">営業時間:</h5>
+                    <p class="mb-1">月曜日から金曜日、午前9時から午後6時</p>
+                    <p class="mb-0">祝日, 土曜, 日曜：休業</p>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="font-weight-semi-bold text-primary mb-4">お問い合わせフォーム</h4>
-                
-                <div class="w-100">
-                    <div class="input-group">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary px-4">こちらをクリック</button>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="font-weight-semi-bold text-primary mb-4">連絡先の詳細</h4>
+                    <p><i class="fa fa-map-marker-alt text-primary mr-2"></i>千葉県浦安市北栄4丁⽬4番11号</p>
+                    <p><i class="fa fa-phone-alt text-primary mr-2"></i>070-1447-2455</p>
+                    <p><i class="fa fa-envelope text-primary mr-2"></i>haru_kawamura1959@yahoo.co.jp</p>
+                    
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="font-weight-semi-bold text-primary mb-4">便利リンク</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white mb-2" href="index.html"><i class="fa fa-angle-right mr-2">ホーム</i></a>
+                        <a class="text-white mb-2" href="#about"><i class="fa fa-angle-right mr-2">会社概要</i></a>
+                        <a class="text-white mb-2" href="#service"><i class="fa fa-angle-right mr-2">サービス</i></a>
+                        <a class="text-white mb-2" href="#project"><i class="fa fa-angle-right mr-2">プロジェクト</i></a>
+                        <a class="text-white" href="#contact"><i class="fa fa-angle-right mr-2">お問い合わせ</i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="font-weight-semi-bold text-primary mb-4">お問い合わせフォーム</h4>
+                    <p class="text-white-50">ご質問やご依頼はこちらからご連絡ください。</p>
+                    <div class="w-100">
+                        <div class="input-group">
+                            <div class="input-group-append">
+                                <a href="mailto:haru_kawamura1959@yahoo.co.jp" class="btn btn-primary px-4">こちらをクリック (メール)</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/profile.php?id=61568718302145&mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                    
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/profile.php?id=61568718302145&mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
 
     <div class="container-fluid copyright bg-dark py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center" style="background-color: #343a40; color: #749ada;">
-            <span class="text-light">
-                <i class="fas fa-copyright text-light me-2"></i>
-                2025-2026 HandS Partners | Built by Head Office – System Team
-            </span>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" style="background-color: #343a40; color: #749ada;">
+                    <span class="text-light">
+                        <i class="fas fa-copyright text-light me-2"></i>
+                        2025-2026 HandS Partners | Built by Head Office – System Team
+                    </span>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
     <a href="#" class="btn btn-primary px-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
@@ -669,11 +642,9 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
 
